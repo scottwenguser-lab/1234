@@ -1,0 +1,46 @@
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    text-align: center;
+    background-color: #f0f4f8;
+}
+
+#game-ui {
+    margin-bottom: 20px;
+}
+
+.stat {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 20px;
+    color: #004d99;
+}
+
+#game-area {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border: 3px solid #004d99;
+    margin: 0 auto;
+    position: relative; /* 核心：限制目標在框框內 */
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+#target {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none; /* 一開始隱藏 */
+    transition: all 0.2s ease-out; /* 讓移動看起來順一點 */
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
